@@ -10,7 +10,6 @@ async def on_startup(bot):
 
 async def main():
     dp.include_router(private_router)
-    # регистрация роутеров
     dp.startup.register(on_startup)
     await dp.start_polling(bot)
 

@@ -48,7 +48,7 @@ async def process_complaint(message: types.Message, state: FSMContext):
     await state.update_data(complaint=complaint)
     data = await state.get_data()
     summary = (
-        f"Спасибо за ваше обращение!\n"
+        f"Спасибо за ваше обращение!!!\n"
         f"Имя: {data.get('name')}\n"
         f"Контакт: {data.get('contact')}\n"
         f"Жалоба: {data.get('complaint')}"
